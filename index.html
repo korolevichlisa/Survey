@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+
+  </head>
+  <body>
+
+    <h1 id="title">Survey Front-End Development</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <div class="form_app">
+      <form id="survey-form">
+        <fieldset class="form-group">
+          <label id="name-label">Enetr your name: <input id="name" type="text" required placeholder="Enter your name" /></label>
+          <label id="email-label">Enter your email: <input id="email" type="email" required placeholder="Enter your email" /></label>
+          <label id="number-label">When did you begin learning Front-End? Enter your age(years): <input id="number" type="number" min="1" max="5" placeholder="Enter your number" /></label>
+        </fieldset>
+        <fieldset class="form-group">
+          <label>What do you prefer more?
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Angular</option>
+              <option value="2">React</option>
+              <option value="3">Vue</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset class="form-group">
+          <label class="header">Where do you want to work?</label>
+           <label><input type="radio" name="developer-type" class="inline" value="Frelance" /> Freelance</label>
+           <label><input type="radio" name="developer-type" class="inline" value="company" /> Work in company</label>
+         </fieldset>
+         <fieldset class="form-group">
+           <label class="header">Which is your favorite?</label>
+           <label>
+             <input type="checkbox" name="terms" class="inline" required value="Front-End" /> Front-End Developer
+           </label>
+           <label>
+             <input type="checkbox" name="terms" class="inline" required value="Back-End" /> Back-End Developer
+           </label>
+         </fieldset>
+        <fieldset class="form-group">
+          <label>Provide a bio:
+            <textarea name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+  			  </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
